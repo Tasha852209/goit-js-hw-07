@@ -32,6 +32,7 @@ function showModal(event) {
   function closeOnEsc(event) {
     if (event.code === "Escape") {
       instance.close();
+      document.body.addEventListener("keydown", closeOnEsc);
     }
   }
 }
